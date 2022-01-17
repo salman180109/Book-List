@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>Book List</title>
+  </head>
+  <body>
+
+    <style>
+      .success,.danger,.info{
+        color:aliceblue;
+        margin: 5px;
+        padding: 5px;
+      }
+
+    </style>
+
+    <div class="my-2 container">
+
+        <h3 class='display-3 text-center'>Book List</h3>
+
+        <form id='book_list'>
+            <div class="mb-3">
+              <label for="id" class="form-label">Id</label>
+              <input type="id" id='id' class="form-control">
+              
+            </div>
+            <div class="mb-3">
+              <label for="author" class="form-label">Author</label>
+              <input type="author" class="form-control" id="author">
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="title" class="form-control" id="title">
+            </div>
+
+            <div class="mb-3">
+                <label for="ISBN" class="form-label">ISBN</label>
+                <input type="isbn" class="form-control" id="isbn">
+            </div>
+            
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-success form-control" id='btn'>Submit</button>
+            </div>
+
+          </form>
+
+          <table class="table my-4">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Author</th>
+                <th scope="col">title</th>
+                <th scope="col">ISBN</th>
+              </tr>
+            </thead>
+            <tbody id='book'>
+              
+            </tbody>
+          </table>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
